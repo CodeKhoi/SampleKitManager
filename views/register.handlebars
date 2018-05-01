@@ -1,0 +1,51 @@
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+
+<div id='registerCard' class="card">
+  <div class="card-content">
+  <h4>REGISTER</h4>
+    <form method='post' action='/users/register'>
+      <div class='row'>
+        <div class='input-field col s12 m6'>
+          <i class='material-icons prefix'>assignment_ind</i>
+          <label class='active' for='name'>Name</label>
+          <input id='name' type='text' class='form-control' name='name'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='input-field col s12 m6'>
+          <i class='material-icons prefix'>account_circle</i>
+          <label class='active' for='username'>Username</label>
+          <input id='username' type='text' class='form-control' name='username'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='input-field col s12 m6'>
+          <i class='material-icons prefix'>email</i>
+          <label class='active' for='email'>Email</label>
+          <input id='email' type='email' class='form-control' name='email'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='input-field col s12 m6'>
+          <i class='material-icons prefix'>lock</i>
+          <label class='active' for='password'>Password</label>
+          <input id='password' type='password' class='form-control' name='password'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='input-field col s12 m6'>
+          <i class='material-icons prefix'>enhanced_encryption</i>
+          <label class='active' for='password2'>Confirm Password</label>
+          <input id='password2' type='password' class='form-control' name='password2'>
+        </div>
+      </div>
+      <div class="card-action">
+        <button id='registerBtn' type='submit' class='btn waves-effect waves-light'>Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

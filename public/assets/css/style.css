@@ -1,0 +1,160 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+     
+  
+.brand-logo {
+  margin-left: 50px;
+}
+
+nav {
+  background-color: #3E3E3B;
+}
+
+nav ul li:hover {
+   background-color: #EBECED;
+}
+
+.nav-wrapper {
+  margin-right: 50px;
+}
+
+.cardHR {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #1D944C;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+hr {
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#loginCard {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 5px solid #1D944C;
+  background-color: #EBECED;
+}
+
+#registerCard {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 5px solid #1D944C;
+  background-color: #EBECED;
+}
+
+.card {
+  margin:0;
+  margin-bottom: 50px;
+  background-color: #eee;
+  height: 100%;
+}
+
+.input-field input[type=text]:focus + label {
+     color: #1D944C !important;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #1D944C !important;
+     box-shadow: 0 1px 0 0 #1D944C !important;
+}
+
+#registerBtn #loginBtn {
+  background-color: #1D944C !important;
+}
+
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.5;
+  color: #1D944C;
+}
+
+#updateContent {
+  margin-top: 125px;
+}
+
+.alert {
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 0 !important;
+}
+
+footer {
+  background-color: #1D944C;
+  height: 550px;
+  padding-top: 20px;
+  border-top: 5px solid #eee;
+}
+
+.btn {
+  margin-top: 5px;
+}
+
+.links a {
+  color: #111;
+}
+
+#indexHead {
+  margin-top: 25px;
+}
+
+table {
+  margin-bottom: 25px;
+}
+
+#deleteBtn {
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tab a {
+  color: #1D944C !important;
+}
+
+.tab .active {
+  background-color: #3E3E3B !important;
+  color: #fff !important;
+  opacity: .5;
+}
+
+.indicator {
+  background-color: #1D944C !important;
+}
+
+#searchSection {
+  margin-top: 75px;
+}
+
+#deleteSection {
+  margin-top: 70px;
+}
+
+ol li {
+  line-height: 2;
+}
+
+.reorderimg {
+  border: 1px solid red;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+

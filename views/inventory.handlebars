@@ -1,0 +1,105 @@
+<h4 class='center-align'>INVENTORY MANAGER</h4>
+
+<ul id="tabs-swipe-demo" class="tabs">
+    <li class="tab col s3"><a href="#test-swipe-1">Update</a></li>
+    <li class="tab col s3"><a href="#test-swipe-2">Delete</a></li>
+    <li class="tab col s3"><a href="#test-swipe-3">Add</a></li>
+    <li class="tab col s3"><a href="#test-swipe-4">REORDER</a></li>
+</ul>
+
+<div id="test-swipe-1" class="col s12">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title grey-text text-darken-4">UPDATE INVENTORY</span>
+            <hr class='cardHR'>
+            <div>
+            <select id='itemSelection' class="browser-default right">
+                <option name='samplekit'>SELECT A SAMPLE KIT TO UPDATE</option>
+            </select>
+            </div>
+
+            <div id='updateContent' class='resultDiv'></div>  
+
+            <div id='searchSection'>
+                <h6>Enter the amount to update inventory</h6>
+                <form method="post" action="/update">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">autorenew</i>
+                            <input id="updateInput" type="text" class="validate" name='quantity'>
+                            <label for="New updated amount"> Inventory +/- update amount</label>
+                            <input type='hidden' name='_id' value='' id='updateInv'>
+                            <input type='hidden' name='samplekit' value='' id='updateKit'>
+                            <button class="btn waves-effect waves-light green right" type="submit">UPDATE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="test-swipe-2" class="col s12">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title grey-text text-darken-4">DELETE PRODUCT</span>
+            <hr class='cardHR'>
+            <select id='deleteSelection' class="browser-default right">
+                <option name='samplekit'>SELECT A SAMPLE KIT TO DELETE</option>
+            </select>
+
+            <div id='deleteSection'>
+                <h6 class='cardContent'>Delete the selected product from inventory</h6>
+                <form method="post" action="/delete">
+                    <div class="row">
+                        <input type='hidden' name='_id' value='' id='deleteInv'>
+                        <button class="btn waves-effect waves-light red right" id='deleteBtn' type="submit">DELETE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="test-swipe-3" class="col s12">
+    <div class="card">
+        <div class="card-content">
+          <span class="card-title">ADD SAMPLE KIT</span>
+          <hr class='cardHR'>
+            <form action="/add" method="post">
+              <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">content_copy</i>
+                    <input id="itemDescription" type="text" class="validate" name="samplekit">
+                    <label for="Item Description">Sample kit name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">add_circle</i>
+                    <input id="QTY" type="text" class="validate" name="quantity">
+                    <label for="QTY">Item QTY</label>
+                    <button class="btn waves-effect waves-light green right" type="submit">ADD</button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="test-swipe-4" class="col s12">
+    <div class="card">
+        <div class="card-content">
+          <span class="card-title">HOW TO REORDER</span>
+          <hr class='cardHR'>
+            <ol>
+                <li>In the order manager, place an order selecting the required sample kit(s) and quantity.</li>
+                <li>Confirm the order has PRINT ONLY (PO) set as the delivery option. Orders without the PO delivery option will not be visible in the correct production queue.</li>
+                <img class='reorderimg' src='/assets/img/delOption.jpg'>
+                <li>Assign the order to READY TO PRINT with the status of SUBMITTED.</li>
+                <img class='reorderimg' src='/assets/img/orderStatus.jpg'>
+            </ol>
+        </div>
+    </div>
+</div>
+
